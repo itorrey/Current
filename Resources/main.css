@@ -1,0 +1,127 @@
+html {
+  padding: 5px 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+}
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  padding: 0px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background: #e5e5e5;
+}
+body a:link {
+  color: #4583fa;
+}
+body a:hover {
+  color: #588ffb;
+}
+body a:visited {
+  color: #075af8;
+}
+.heading,
+.topic {
+  color: #3e444b;
+  padding: 0.5em;
+  border-bottom: 2px solid #e3e5e9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.99);
+  z-index: 2;
+  box-shadow: 1px 1px 8px #eef2fb;
+}
+.heading h1,
+.topic h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+.heading h2,
+.topic h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.2em;
+}
+.chat {
+  position: relative;
+  border-bottom: 1px solid #f1f2f4;
+  padding: 15px 0;
+  margin: 5px 10px;
+  border-radius: 2px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-right: 15px;
+  background: #fff;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+.chat .avatar {
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+.chat .avatar img {
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 40px;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.chat .avatar img:hover {
+  -webkit-transform: scale(1.05);
+}
+.chat .messages {
+  padding-left: 20px;
+}
+.chat .messages p {
+  padding: 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #4f5562;
+}
+.chat .messages p img {
+  vertical-align: middle;
+}
+.chat .sender {
+  font-weight: 300;
+  color: #3e444b;
+  font-size: 18px;
+  color: #626262;
+  border-bottom: 1px solid #f3f3f3;
+  display: block;
+  padding-left: 38px;
+  padding-bottom: 8px;
+}
+.chat .time {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 0.8em;
+  color: #6289be;
+}
+.history {
+  background: #f7f8fa;
+}
+.mention {
+  background: #eff4fb;
+}
+.autoreply p {
+  font-style: italic;
+}
+.status {
+  text-align: left;
+  color: #606974;
+  padding: 0.6em;
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.2);
+  padding-right: 15px;
+  margin: 5px 10px;
+  border-radius: 2px;
+  font-style: italic;
+  font-size: 1.1em;
+}

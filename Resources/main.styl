@@ -1,0 +1,154 @@
+$avatarSize = 32px;
+$defaultTextColor = #3E444B;
+$borderColor = #F1F2F4;
+$linkColor = #4583FA;
+$highlightColor = #EFF4FB;
+
+html {
+	padding:5px 0 5px 0;
+	margin:0;
+	font-size:14px;
+}
+
+body {
+	font-family:"Helvetica Neue", "Helvetica", sans-serif;
+	padding:0px;
+	margin:0;
+	padding-top:40px;
+	padding-bottom:10px;
+	background:#E5E5E5;
+	
+	a {
+		&:link {
+			color:$linkColor;
+		}
+	
+		&:hover {
+			color:lighten($linkColor, 10%);
+		}
+	
+		&:visited {
+			color:darken($linkColor, 20%);
+		}
+	}
+}
+
+.heading, .topic {
+	color:$defaultTextColor;
+	padding:0.5em;
+	border-bottom:2px solid darken($borderColor, 5%);
+	position:fixed;
+	top:0;
+	width:100%;
+	background:rgba(255,255,255,0.99);
+	z-index:2;
+	box-shadow: 1px 1px 8px #EEF2FB;
+	
+	h1 {
+		text-align:center;
+		font-weight:300;
+		font-size:1.4em;
+		margin:0;
+		padding:0;
+	}
+	
+	h2 {
+		text-align:left;
+		font-weight:normal;
+		font-size:0.9em;
+		margin:0;
+		padding:0.2em;
+	}
+}
+
+.chat {
+	position:relative;
+	border-bottom:1px solid $borderColor;
+	padding:15px 0;
+	margin:5px 10px;
+	border-radius:2px;
+	border-bottom:1px solid #e8e8e8;
+	padding-right:15px;
+	background:#fff;
+	box-shadow:0 2px 3px rgba(0,0,0,.05);
+
+	.avatar {
+		display:inline-block;
+		position:absolute;
+		left:15px;
+		top:8px;
+		
+		img {
+			width:$avatarSize;
+			height:$avatarSize;
+			-webkit-border-radius: 40px;
+			-webkit-transition: all .4s ease-in-out;
+			
+			&:hover {
+				-webkit-transform: scale(1.05);
+			}
+		}
+		
+	}
+	
+	.messages {
+		padding-left:20px;
+		p {
+			padding:0.25em;
+			padding-left:0;
+			margin:0;
+			line-height:135%;
+			color:#4F5562;
+			
+			img {
+				vertical-align:middle;
+			}
+		}
+	}
+	
+	.sender{
+		font-weight:300;
+		color:$defaultTextColor;
+		font-size:18px;
+		color:#626262;
+		border-bottom:1px solid #F3F3F3;
+		display:block;
+		padding-left:38px;
+		padding-bottom:8px;
+	}
+	
+	.time {
+		position:absolute;
+		right:15px;
+		top:10px;
+		font-size:0.8em;
+		color:#6289BE;
+	}
+}
+
+.history {
+	background:#F7F8FA;
+}
+
+.mention {
+	background:$highlightColor;
+}
+
+.autoreply {
+	p {
+		font-style:italic;
+	}
+}
+
+.status {
+	text-align:left;
+	color:lighten($defaultTextColor, 20%);
+	padding:0.6em;
+	font-size:0.85em;
+	background:rgba(255,255,255,0.2);
+	padding-right:15px;
+	margin:5px 10px;
+	border-radius:2px;
+	font-style:italic;
+	font-size:1.1em;
+}
