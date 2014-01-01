@@ -3,13 +3,13 @@
 <plist version="1.0">
     <dict>
         <key>CFBundleName</key>
-        <string>Now</string>
+        <string>Current</string>
 
         <key>CFBundleIdentifier</key>
-        <string>itorrey.Now.style</string>
+        <string>itorrey.Current.style</string>
 
         <key>CFBundleGetInfoString</key>
-        <string>Now</string>
+        <string>Current</string>
 
         <key>DefaultFontFamily</key>
         <string>Helvetica Neue</string>
