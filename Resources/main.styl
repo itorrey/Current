@@ -5,17 +5,14 @@ $linkColor = #4583FA;
 $highlightColor = #EFF4FB;
 
 html {
-	padding:5px 0 5px 0;
+	padding:5px 0 0 0;
 	margin:0;
-	font-size:14px;
 }
 
 body {
-	font-family:"Helvetica Neue", "Helvetica", sans-serif;
 	padding:0px;
 	margin:0;
 	padding-top:40px;
-	padding-bottom:10px;
 	background:#E5E5E5;
 	
 	a {
@@ -64,18 +61,18 @@ body {
 .chat {
 	position:relative;
 	border-bottom:1px solid $borderColor;
-	padding:15px 0;
+	padding:15px 15px 15px 0;
 	margin:5px 10px;
 	border-radius:2px;
 	border-bottom:1px solid #e8e8e8;
-	padding-right:15px;
 	background:#fff;
 	box-shadow:0 2px 3px rgba(0,0,0,.05);
+	
 
 	.avatar {
 		display:inline-block;
 		position:absolute;
-		left:15px;
+		left:18px;
 		top:8px;
 		
 		img {
@@ -92,7 +89,7 @@ body {
 	}
 	
 	.messages {
-		padding-left:20px;
+		padding-left:23px;
 		p {
 			padding:0.25em;
 			padding-left:0;
@@ -150,5 +147,9 @@ body {
 	margin:5px 10px;
 	border-radius:2px;
 	font-style:italic;
-	font-size:1.1em;
+}
+
+.spacer:last-child {
+	/*this is really stupid but I can't figure out why without it the body of the page won't have any padding even if I set it. Whatevs.*/
+	height:2px;
 }

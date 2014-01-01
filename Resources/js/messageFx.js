@@ -12,7 +12,7 @@ function initStyle() {
 		document.getElementById("Chat").appendChild(elem);
 		
 		if(!coalescedHTML.isConsecutive) {
-			var node = document.getElementById("Chat").lastElementChild;
+			var node = document.getElementById("Chat").lastElementChild.previousElementSibling;
 			
 			move(node)
 				.duration("0s")
@@ -24,7 +24,6 @@ function initStyle() {
 				.set("-webkit-transform", "perspective( 200px ) rotateX(0)")
 				.set("opacity", "1")
 				.end();
-			
 		}
 		alignChat(coalescedHTML.shouldScroll);
 	});

@@ -1,14 +1,11 @@
 html {
-  padding: 5px 0 5px 0;
+  padding: 5px 0 0 0;
   margin: 0;
-  font-size: 14px;
 }
 body {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
   padding: 0px;
   margin: 0;
   padding-top: 40px;
-  padding-bottom: 10px;
   background: #e5e5e5;
 }
 body a:link {
@@ -51,18 +48,17 @@ body a:visited {
 .chat {
   position: relative;
   border-bottom: 1px solid #f1f2f4;
-  padding: 15px 0;
+  padding: 15px 15px 15px 0;
   margin: 5px 10px;
   border-radius: 2px;
   border-bottom: 1px solid #e8e8e8;
-  padding-right: 15px;
   background: #fff;
   box-shadow: 0 2px 3px rgba(0,0,0,0.05);
 }
 .chat .avatar {
   display: inline-block;
   position: absolute;
-  left: 15px;
+  left: 18px;
   top: 8px;
 }
 .chat .avatar img {
@@ -75,7 +71,7 @@ body a:visited {
   -webkit-transform: scale(1.05);
 }
 .chat .messages {
-  padding-left: 20px;
+  padding-left: 23px;
 }
 .chat .messages p {
   padding: 0.25em;
@@ -123,5 +119,8 @@ body a:visited {
   margin: 5px 10px;
   border-radius: 2px;
   font-style: italic;
-  font-size: 1.1em;
+}
+.spacer:last-child {
+/*this is really stupid but I can't figure out why without it the body of the page won't have any padding even if I set it. Whatevs.*/
+  height: 2px;
 }
