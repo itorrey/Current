@@ -21,19 +21,19 @@ body a:visited {
 .topic {
   color: #3e444b;
   padding: 0.5em;
-  border-bottom: 2px solid #e3e5e9;
   position: fixed;
   top: 0;
   width: 100%;
   background: rgba(255,255,255,0.99);
   z-index: 2;
-  box-shadow: 1px 1px 8px #eef2fb;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #e8e8e8;
 }
 .heading h1,
 .topic h1 {
   text-align: center;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
 }
@@ -58,12 +58,12 @@ body a:visited {
 .chat .avatar {
   display: inline-block;
   position: absolute;
-  left: 18px;
-  top: 8px;
+  left: 20px;
+  top: 10px;
 }
 .chat .avatar img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   -webkit-border-radius: 40px;
   -webkit-transition: all 0.4s ease-in-out;
 }
@@ -86,11 +86,11 @@ body a:visited {
 .chat .sender {
   font-weight: 300;
   color: #3e444b;
-  font-size: 18px;
+  font-size: 16px;
   color: #626262;
   border-bottom: 1px solid #f3f3f3;
   display: block;
-  padding-left: 38px;
+  padding-left: 32px;
   padding-bottom: 8px;
 }
 .chat .time {
@@ -98,7 +98,12 @@ body a:visited {
   right: 15px;
   top: 10px;
   font-size: 0.8em;
-  color: #6289be;
+  color: #aaa;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
+}
+.chat:hover .time {
+  opacity: 1;
 }
 .history {
   background: #f7f8fa;

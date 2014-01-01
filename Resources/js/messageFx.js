@@ -16,13 +16,15 @@ function initStyle() {
 			
 			move(node)
 				.duration("0s")
-				.set("-webkit-transform", "perspective( 200px ) rotateX(15deg)")
-				.set("opacity", "0.9")
+				.set("bottom", "-15px")
+				.set("-webkit-transform", "perspective( 200px ) rotateX(8deg)")
 				.end();
 			
 			move(node)
+				.duration("0.24s")
+				.ease("out")
+				.set("bottom", "0")
 				.set("-webkit-transform", "perspective( 200px ) rotateX(0)")
-				.set("opacity", "1")
 				.end();
 		}
 		alignChat(coalescedHTML.shouldScroll);

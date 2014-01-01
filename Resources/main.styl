@@ -1,4 +1,4 @@
-$avatarSize = 32px;
+$avatarSize = 28px;
 $defaultTextColor = #3E444B;
 $borderColor = #F1F2F4;
 $linkColor = #4583FA;
@@ -33,18 +33,18 @@ body {
 .heading, .topic {
 	color:$defaultTextColor;
 	padding:0.5em;
-	border-bottom:2px solid darken($borderColor, 5%);
 	position:fixed;
 	top:0;
 	width:100%;
 	background:rgba(255,255,255,0.99);
 	z-index:2;
-	box-shadow: 1px 1px 8px #EEF2FB;
+	box-shadow:0 2px 3px rgba(0,0,0,.05);
+	border-bottom:1px solid #e8e8e8;
 	
 	h1 {
 		text-align:center;
 		font-weight:300;
-		font-size:1.4em;
+		font-size:1.2em;
 		margin:0;
 		padding:0;
 	}
@@ -67,13 +67,12 @@ body {
 	border-bottom:1px solid #e8e8e8;
 	background:#fff;
 	box-shadow:0 2px 3px rgba(0,0,0,.05);
-	
 
 	.avatar {
 		display:inline-block;
 		position:absolute;
-		left:18px;
-		top:8px;
+		left:20px;
+		top:10px;
 		
 		img {
 			width:$avatarSize;
@@ -106,20 +105,28 @@ body {
 	.sender{
 		font-weight:300;
 		color:$defaultTextColor;
-		font-size:18px;
+		font-size:16px;
 		color:#626262;
 		border-bottom:1px solid #F3F3F3;
 		display:block;
-		padding-left:38px;
+		padding-left:32px;
 		padding-bottom:8px;
 	}
+	
+	
 	
 	.time {
 		position:absolute;
 		right:15px;
 		top:10px;
 		font-size:0.8em;
-		color:#6289BE;
+		color:#aaa;
+		opacity:0.5;
+		transition:opacity 0.3s ease-out;
+	}
+	
+	&:hover .time {
+		opacity:1;
 	}
 }
 
