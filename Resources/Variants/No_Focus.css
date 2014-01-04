@@ -159,3 +159,12 @@ body a:visited {
 .mention .time {
   color: #eeb600;
 }
+.focus {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+.firstFocus {
+  border-top: 3px solid #49b5f6;
+  background: #fff;
+  border-bottom: none;
+}
