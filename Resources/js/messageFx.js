@@ -26,6 +26,6 @@ function initStyle() {
 					.set("-webkit-transform", "perspective( 200px ) rotateX(0)")
 					.end();
 		}
-		alignChat(coalescedHTML.shouldScroll);
+		
 	});
 }
