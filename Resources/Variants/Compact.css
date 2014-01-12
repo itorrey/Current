@@ -54,6 +54,9 @@ body a:visited {
   border-bottom: 1px solid #e8e8e8;
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.06);
+/*&:hover .time {
+		opacity:0.99;
+	}*/
 }
 .chat .avatar {
   display: inline-block;
@@ -62,8 +65,8 @@ body a:visited {
   top: 10px;
 }
 .chat .avatar img {
-  width: 28px;
-  height: 28px;
+  width: $avatarSize;
+  height: $avatarSize;
   border-radius: 40px;
 }
 .chat .messages {
@@ -96,10 +99,7 @@ body a:visited {
   font-size: 0.8em;
   color: #aaa;
   opacity: 0.5;
-  transition: opacity 0.6s ease-out;
-}
-.chat:hover .time {
-  opacity: 0.999;
+  transition: all 0.6s ease-out;
 }
 .autoreply p {
   font-style: italic;
@@ -131,11 +131,11 @@ body a:visited {
 }
 .history {
   background: #f5f5f5;
-  opacity: 0.85;
-  transition: all 0.75s ease-out;
+  opacity: 0.65;
+  transition: background 0.2s ease-in;
 }
 .history:hover {
-  opacity: 0.99;
+  opacity: 0.9;
   background: #fff;
 }
 .history.mention:hover {
@@ -183,5 +183,5 @@ body a:visited {
 .chat .messages p {
   padding: 0.25em 0.15em;
   line-height: 115%;
-  font-size: 0.88em;
+  font-size: 0.95em;
 }
