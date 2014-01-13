@@ -46,5 +46,9 @@
 
         <key>AllowTextColors</key>
         <true/>
+		
+		<key>DefaultVariant</key>
+		<string>Default</string>
+		
     </dict>
 </plist>
